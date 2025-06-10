@@ -238,7 +238,7 @@ background-color: #fff;
     display: none;
 }
 .slide-bar.show {
-  right: 0;
+  right: 0 !important;
 }
 
 .side-mobile-menu ul li ul li {

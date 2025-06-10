@@ -30,22 +30,7 @@ function App() {
 
         // GSAP .reveal logic
   if ($('.reveal').length) { gsap.registerPlugin(ScrollTrigger); let revealContainers = document.querySelectorAll(".reveal"); revealContainers.forEach((container) => { let image = container.querySelector("img"); let tl = gsap.timeline({ scrollTrigger: { trigger: container, toggleActions: "play none none none" } }); tl.set(container, { autoAlpha: 1 }); tl.from(container, 1.5, { xPercent: 0, ease: Power2.out }); tl.from(image, 1.5, { xPercent: 100, scale: 1.3, delay: -1.5, ease: Power2.out }); }); }
-    // SIDEBAR
-    $(".hamburger_menu").on("click", function (e) {
-      e.preventDefault();
-      $(".slide-bar").toggleClass("show");
-      $("body").addClass("on-side");
-      $(".body-overlay").addClass("active");
-      $(this).addClass("active");
-    });
 
-    $(".close-mobile-menu > a").on("click", function (e) {
-      e.preventDefault();
-      $(".slide-bar").removeClass("show");
-      $("body").removeClass("on-side");
-      $(".body-overlay").removeClass("active");
-      $(".hamburger_menu").removeClass("active");
-    });
 
     // PAGE PROGRESS
     const progressPath = document.querySelector(".progress-wrap path");
