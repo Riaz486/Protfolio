@@ -623,12 +623,12 @@ By combining clean code, UI best practices, and performance-driven development, 
                     My Portfolio
                   </h5>
                   <div className="space24"></div>
-                  <h2 data-aos="fade-left" data-aos-duration="1000">
+                  <h2 data-aos="fade-left" data-aos-duration="1000" style={{fontSize:"75px"}}>
                     Innovation Designs
                   </h2>
                   <div className="space24"></div>
-                  <h2 className="head" data-aos="fade-left" data-aos-duration="1100">
-                    Real <span>Results</span>
+                  <h2 className="head" data-aos="fade-left" data-aos-duration="1100" style={{fontSize:"75px"}}>
+                    Real <span style={{fontSize:"73px"}}>Results</span>
                   </h2>
                 </div>
               </div>
