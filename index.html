@@ -42,6 +42,8 @@
         $(".hamburger_menu").on("click", function (e) {
             e.preventDefault();
             $(".slide-bar").toggleClass("show");
+            $(".slide-bar").addClass("show");
+
             $("body").addClass("on-side");
             $('.body-overlay').addClass('active');
             $(this).addClass('active');
